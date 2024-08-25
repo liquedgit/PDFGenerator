@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="min-h-screen flex items-center justify-center dark:bg-slate-900 dark:text-slate-400">
+        <div>
+            <h1 class="text-center text-4xl">PDFGenerator</h1>
+            <h1 class="text-2xl">Create your own PDF only right here, right now</h1>
+            <form method="POST" action="/" class="flex flex-col items-center justift-center p-4">
+
+                <textarea
+                    class="px-4 py-2 font-semibold text-sm bg-white text-slate-700 dark:bg-slate-700 dark:text-white rounded-md shadow-sm ring-1 ring-slate-900/5 dark:ring-white/10 dark:ring-inset border-indigo-500 border-2 border-none mt-2"
+                    rows="5" cols="50" name="content" id="pdf-content"></textarea>
+                <button
+                    class="px-4 py-2 font-semibold text-sm bg-white text-slate-700 dark:bg-slate-700 dark:text-white rounded-md shadow-sm ring-1 ring-slate-900/5 dark:ring-white/10 dark:ring-inset border-indigo-500 border-2 border-none mt-2"
+                    id="create-pdf" type="submit">Create
+                    PDF</button>
+                <p class="mt-2">Just one click away</p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
