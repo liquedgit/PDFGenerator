@@ -1,0 +1,11 @@
+version: '3'
+services:
+  pdfgenerator:
+    container_name: pdfgenerator
+    build: .
+    environment:
+      - FLAG=BeeCTF{FAKE_FLAG}
+      - PORT=3000
+    image: pdfgenerator
+    ports:
+      - 3000:3000

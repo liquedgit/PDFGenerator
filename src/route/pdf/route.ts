@@ -14,7 +14,7 @@ router.get("/pdf", (req : Request, res : Response)=>{
 
 router.get("/flag", (req: Request, res : Response)=>{
     if(req.ip!.includes("127.0.0.1")){
-        res.send(process.env.FLAG || "BeeCTF{f4k3_fl4g}")
+        return res.send(process.env.FLAG || "BeeCTF{f4k3_fl4g}")
     }
     return res.redirect("/")
 })

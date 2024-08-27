@@ -2,6 +2,7 @@ import puppeteer, { Browser, PuppeteerLaunchOptions } from "puppeteer"
 
 const browser_options : PuppeteerLaunchOptions = {
     headless: true,
+    executablePath: "/usr/bin/chromium-browser",
     args: [
         '--no-sandbox',
         '--disable-background-networking',
